@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+body {
+display:  flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+.container {
+  display: grid;
+  width: 748px;
+  height: 748px; 
+  border: solid;
+  background-color: #000;
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 130px 155px 22px;
+  gap: 9px;
+}
+
+.item {
+background-color: #F0F1EC;
+}
+
+.dark {
+background-color: #040D12;
+}
+
+.white1 {
+grid-column: span 3;
+}
+
+.white2 {
+grid-row: span 2;
+}
+
+.white3 {
+grid-area: 2/ 2/ 4/ 4;
+gap: 9px;
+}
+
+.emerald {
+background-color: #183D3D;
+border-bottom: 10px solid #000;
+}
+
+.seaglass {
+background-color: #5C8374;
+}
+
+.light {
+ background-color: #93B1A6; 
+}
+
+.white4 {
+grid-row: span 2;
+}
+
+</style>
+</head>
+<body>  
+
+  <div class="container">
+  <div class="item dark"></div>
+  <div class="item white1"></div>
+  <div class="item white2"></div>
+  <div class="item white3"></div>
+
+  <div class="item emerald"></div> 
+  <div class="item white4"></div>
+
+  <div class="item"></div>
+  <div class="item seaglass"></div>
+  <div class="item light"></div>
+  
+  </div>
+ 
+
+</body>
+
+</html>
